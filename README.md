@@ -47,4 +47,26 @@ Frontend Learner | GitHub Explorer | UI Enthusiast
 - Email: oxdubova@gmail.com
 
 ---
+## 🖼️ Скриншоти інтерфейсу
+
+### 📍 Головна сторінка
+![main_1](screenshots/main_1.jpg)
+![main_2](screenshots/main_2.jpg)
+![main_3](screenshots/main_3.jpg)
+
+### 📱 Адаптивна версія для планшетів
+![adaptive_iPad_1](screenshots/adaptive_iPad_1.jpg)
+![adaptive_iPad_2](screenshots/adaptive_iPad_2.jpg)
+![adaptive_iPad_3](screenshots/adaptive_iPad_3.jpg)
+![adaptive_iPad_4](screenshots/adaptive_iPad_4.jpg)
+
+### 📱 Адаптивна мобільна версія
+![adaptive_mobile_1](screenshots/adaptive_mobile_1.jpg)
+![adaptive_mobile_2](screenshots/adaptive_mobile_2.jpg)
+![adaptive_mobile_3](screenshots/adaptive_mobile_3.jpg)
+![adaptive_mobile_4](screenshots/adaptive_mobile_4.jpg)
+![adaptive_mobile_5](screenshots/adaptive_mobile_5.jpg)
+![adaptive_mobile_6](screenshots/adaptive_mobile_6.jpg)
+![adaptive_mobile_7](screenshots/adaptive_mobile_7.jpg)
+
 
