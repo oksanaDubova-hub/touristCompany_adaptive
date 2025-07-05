@@ -56,7 +56,7 @@ Frontend Learner | GitHub Explorer | UI Enthusiast
 
 ### 📱 Адаптивна версія для планшетів
 ![adaptive_iPad_1](screenshots/adaptive_iPad_1.jpg)
-![adaptive_iPad_2](screenshots/adaptive_iPad_2.jpg)
+![adaptive_iPad_2](screenshots/adaptive_iPad2.jpg)
 ![adaptive_iPad_3](screenshots/adaptive_iPad_3.jpg)
 ![adaptive_iPad_4](screenshots/adaptive_iPad_4.jpg)
 
