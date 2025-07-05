@@ -1,0 +1,619 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Garamond;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+.title_nav {
+  display: flex;
+  gap: 30px;
+}
+
+h2 {
+  margin: 0;
+  }
+
+.desktop-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+
+.social_net {
+  display: flex;
+  gap: 20px;
+}
+
+.social_net img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Сховати бургер на десктопі */
+.burger-btn,
+.burger-checkbox,
+.burger-menu {
+  display: none;
+}
+
+button {
+  border: 1px solid grey;
+  border-radius: 7px;
+  margin: 40px 60px 15px 60px;
+  width: 120px;
+  height: 50px;
+  color: gray;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.let {
+  max-width: 50%;
+  padding-bottom: 70px;
+}
+.let_img {
+  width: 50%;
+}
+.let_img img {
+  width: 100%; 
+  max-width: 600px; 
+  height: 100%;
+  object-fit: cover; 
+}
+h1 {
+  padding: 150px 50px 50px 60px;
+  text-align: left;
+  font-size: 60px;
+  font-weight: 100;
+}
+.let p {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+}
+.let p:first-of-type {
+  font-size: 20px;
+}
+
+.story_1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  width: 100%;
+  align-items: stretch; 
+}
+
+.story_1_img {
+  overflow: hidden;
+}
+
+.story_1_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.story_block_1 {
+  padding: 50px;
+}
+section h2 {
+  padding-bottom: 50px;
+  padding-left: 60px;
+  text-align: left;
+  font-size: 40px;
+  font-weight: 100;
+}
+.story_block_1 p {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+}
+.story_2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  width: 100%;
+  align-items: stretch; 
+}
+.story_2_img {
+  overflow: hidden;
+}
+
+.story_2_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.story_block_2 {
+  padding: 50px;
+}
+.story_block_2 p {
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: justify;
+}
+
+.photo {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-item {
+  position: relative;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Напівпрозора плашка */
+.caption {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+}
+
+/* Показ при наведенні */
+.photo-item:hover .caption {
+  opacity: 1;
+}
+
+/* Стрілки */
+.photo::before,
+.photo::after {
+  content: "‹";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  color: rgba(255, 255, 255);
+  padding: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  user-select: none;
+}
+
+.photo::after {
+  content: "›";
+  right: 0;
+  left: auto;
+}
+
+.photo::before {
+  left: 0;
+}
+
+/* Показ стрілок при наведенні */
+.photo:hover::before,
+.photo:hover::after {
+  opacity: 1;
+}
+
+.gallery h2, .features h2, .form h2 {
+    margin-bottom: 20px;
+    padding-left: 0; 
+    text-align: center;
+    padding-top: 50px;
+}
+.features_container {
+
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+
+}
+.one, .two, .three, .four, .five, .six {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.features_container img {
+    width: 24px;
+    padding: 30px;
+}
+.features_container h3 {
+    padding-bottom: 30px;
+}
+.features_container p {
+    padding: 0 10px 30px 10px;
+    text-align: center;
+}
+.one, .two, .three {
+    border-bottom: 1px solid #d3d3d3;
+}
+.one, .two, .four, .five {
+    border-right: 1px solid #d3d3d3;
+}
+.form_container {
+    display: flex;
+    max-width: 1100px;
+}
+.form_container form {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+.form_container label {
+    font-weight: bold;
+}
+.account {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 30px;
+    padding: 5px 30px 30px 30px;
+}
+
+.account > div {
+    flex: 1 1 0; 
+}
+
+.account input {
+    width: 100%; 
+    max-width: 250px; 
+    min-width: 100px; 
+    height: 25px;
+    box-sizing: border-box;
+}
+
+.contact_me {
+    padding: 20px 30px 30px 30px;
+}
+.contact_me input {
+    margin-left: 30px;
+}
+.topic {
+    padding: 5px 30px 30px 30px;
+}
+.topic input[type="text"] {
+    width: 100%;
+    box-sizing: border-box; 
+    height: 25px;
+}
+.textarea {
+    padding: 5px 30px 30px 30px;
+}
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+.checkbox {
+    padding: 5px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox button {
+    margin: -20px 0 15px 60px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center; 
+}
+.social {
+    display: flex;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+.social img {
+    width: 30px;
+    height: 30px;
+    padding: 10px; 
+    border: 1px solid #9b9999;
+    border-radius: 50%; 
+    
+}
+
+.social img:hover {
+    background-color: #c4c2c2;
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+.burger {
+  display: none;
+}
+
+
+@media (min-width: 600px) and (max-width: 850px) {
+  /* 1. Ховаємо іконки в хедері */
+  .social_net {
+    display: none !important;
+  }
+  h1 {
+    padding: 20px 10px 30px 10px;
+  }
+  .let {
+    padding-bottom: 15px;
+  }
+  .let p {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
+  .let_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  button {
+    margin: 25px 0 15px 0;
+  }
+    section h2 {
+    padding-bottom: 20px;
+    padding-left: 1px;
+  }
+  .story_1, .story_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    align-items: stretch; 
+}
+  .story_block_1, .story_block_2 {
+    padding: 15px;
+  }
+  .story_block_1 p, .story_block_2 p {
+    padding-left: 1px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+
+    /* 2. Галерея — залишити лише 2 перших зображення */
+ .photo-item:nth-child(n+3) {
+    display: none !important;
+  }
+    /* 3. Features — 2 колонки × 3 рядки */
+  .features_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features_container .one,
+  .features_container .two,
+  .features_container .three,
+  .features_container .four,
+  .features_container .five,
+  .features_container .six {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+
+  .features_container .two,
+  .features_container .four,
+  .features_container .six {
+    border-right: none; /* Прибираємо праву межу у другій колонці */
+  }
+    .features_container .one,
+  .features_container .two {
+    border-top: none;
+  }
+
+  .features_container .five,
+  .features_container .six {
+    border-bottom: none; /* Прибираємо нижню межу в останньому рядку */
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .desktop-menu {
+    display: none;
+  }
+  .social_net {
+    display: none !important;
+  }
+
+.burger-btn {
+    display: inline-block;
+    font-size: 28px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  .burger-menu {
+    display: none;
+    position: absolute;
+    top: 100%;         /* після header */
+    right: 20px;
+    background: #eee;
+    padding: 15px;
+    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  .burger-checkbox:checked ~ .burger-menu {
+    display: flex;
+  }
+  .burger-checkbox {
+    display: none;
+  }
+  .burger-menu li {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .burger-menu li:hover {
+    background-color: #ccc;
+  }
+  
+      
+  .greeting,
+  .story_1,
+  .story_2 {
+    display: block;
+    width: 100%;
+  }
+
+  .let,
+  .let_img,
+  .story_1_img,
+  .story_2_img,
+  .story_block_1,
+  .story_block_2 {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .let p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h1 {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .let_img img,
+  .story_1_img img,
+  .story_2_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .greeting button,
+  .story_block_1 button,
+  .story_block_2 button {
+    margin: 20px auto;
+    display: block;
+  }
+    .greeting,
+  .story_2 {
+    display: flex;
+    flex-direction: column;
+  }
+    .greeting .let_img {
+    order: -1;
+  }
+  section h2 {
+    padding-bottom: 20px;
+    padding-left: 1px;
+  }
+  .story_block_1 p, .story_block_2 p {
+    padding-left: 1px;
+    padding-right: 10px;
+    text-align: justify;
+  }
+
+  /* .story_2 — переміщуємо картинку над текстом */
+  .story_2 .story_2_img {
+    order: -1;
+  }
+  .photo-item:nth-child(n+2) {
+    display: none !important;
+  }
+
+  .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .gallery h2 {
+    padding-left: 0;
+  }
+  .features_container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* розтягнути кожен блок на всю ширину */
+  }
+
+  .features_container > div {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  .one, .two, .three, .four, .five, .six {
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .features_container img {
+    max-width: 60px;
+    margin-bottom: 10px;
+  }
+  .features h2, .form h2 {
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-left: 0;
+    text-align: center;
+  }
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .form_name input, .form_email input, .form_phone input {
+    max-width: 550px;    
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+  
+
+      
+  
+
+
+
+
+
+
