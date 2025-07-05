@@ -69,4 +69,9 @@ Frontend Learner | GitHub Explorer | UI Enthusiast
 ![adaptive_mobile_6](screenshots/adaptive_mobile_6.jpg)
 ![adaptive_mobile_7](screenshots/adaptove_mobile_7.jpg)
 
+## 🚀 Демо
+
+[Переглянути сайт на GitHub Pages](https://oksanaDubova-hub.github.io/touristCompany_adaptive/)
+
+
 
