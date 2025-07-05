@@ -67,6 +67,6 @@ Frontend Learner | GitHub Explorer | UI Enthusiast
 ![adaptive_mobile_4](screenshots/adaptive_mobile_4.jpg)
 ![adaptive_mobile_5](screenshots/adaptive_mobile_5.jpg)
 ![adaptive_mobile_6](screenshots/adaptive_mobile_6.jpg)
-![adaptive_mobile_7](screenshots/adaptive_mobile_7.jpg)
+![adaptive_mobile_7](screenshots/adaptove_mobile_7.jpg)
 
 
